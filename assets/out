@@ -23,11 +23,11 @@ except ImportError:
 
 from resource import Resource
 
-# Future: from ansible.inventory.manager import InventoryManager
+from ansible.inventory.manager import InventoryManager
 # from ansible.executor.stats import AggregateStats
-from ansible.inventory import Inventory
+# from ansible.inventory import Inventory
 from ansible.parsing.dataloader import DataLoader
-from ansible.vars import VariableManager
+from ansible.vars.manager import VariableManager
 from ansible.executor.playbook_executor import PlaybookExecutor
 from ansible.executor.task_queue_manager import TaskQueueManager
 from ansible.errors import AnsibleError
