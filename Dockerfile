@@ -1,7 +1,7 @@
 # Pull base image
-FROM alpine:3.6
-LABEL Description="Concourse Ansible resource" Vendor="SpringerNature Platform Engineering" Version="1.0"
-MAINTAINER SpringerNature Platform Engineering platform-engineering@springernature.com
+FROM alpine:3.9
+LABEL Description="evoila Concourse Ansible resource" Vendor="evoila GmbH" Version="1.0.1"
+MAINTAINER evoila GmbH - mnikolai@evoila.de 
 
 # Base packages
 # Build dependencies
@@ -18,8 +18,8 @@ RUN ln -s /lib /lib64 \
             libc6-compat \
             python3 \
             libxml2 \
-            py-lxml \
-            py-pip \
+            py3-lxml \
+            py3-pip \
             openssl \
             ca-certificates \
             openssh-client \
