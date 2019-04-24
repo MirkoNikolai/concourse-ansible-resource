@@ -3,11 +3,11 @@
 set -e
 
 IMAGE=concourse-ansible-resource
-DOCKER_HUB_USER=platformengineering
+DOCKER_HUB_USER=evoila
 
 # 1. Build the docker image
 docker build -t $IMAGE .
 
 # Push to dockerhub
-#docker tag  $IMAGE $DOCKER_HUB_USER/$IMAGE
-#docker push $DOCKER_HUB_USER/$IMAGE
+docker tag  $IMAGE evoila/concourse-ansible-resource
+docker push $DOCKER_HUB_USER/$IMAGE
